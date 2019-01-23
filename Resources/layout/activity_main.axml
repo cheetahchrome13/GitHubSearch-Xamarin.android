@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:background="#000000"
+	android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1" >
+        <ImageView
+            android:src="@drawable/octicon"
+			android:padding="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView1" />
+		<EditText
+            android:hint="Search by Location"
+			android:radius="1dp"
+			android:gravity="center"
+            android:layout_width="255dp"
+            android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:background="@drawable/radius_edittext"
+            android:id="@+id/searchBox" />
+		<ImageButton
+			android:background="@android:color/transparent"
+			android:src="@drawable/favorite_icon"
+			android:layout_margin="10dp"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:id="@+id/favoritesButton" />
+	</LinearLayout>
+	
+	<Button
+		android:text="Git Users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:layout_marginTop="5dp"
+		android:layout_marginBottom="15dp"
+        android:id="@+id/searchButton" />
+	
+    <ListView
+		android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+		android:id="@+id/userListView"/>
+	
+</LinearLayout>
